@@ -8,21 +8,21 @@ import android.widget.EditText;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import com.dat.mylabs.Constants;
 import com.dat.mylabs.R;
 
-public class FirstActivity extends AppCompatActivity {
+public class Lab1FirstActivity extends AppCompatActivity {
 
-    public static final String KEY_TXT = "TEXT";
     @Bind(R.id.editText1)
     protected EditText editText1;
     @Bind(R.id.editText2)
     protected EditText editText2;
 
     public static void startActivity(Context context) {
-        if (context instanceof FirstActivity) {
+        if (context instanceof Lab1FirstActivity) {
             return;
         }
-        Intent intent = new Intent(context, FirstActivity.class);
+        Intent intent = new Intent(context, Lab1FirstActivity.class);
         context.startActivity(intent);
     }
 
@@ -36,8 +36,8 @@ public class FirstActivity extends AppCompatActivity {
     @OnClick(R.id.next)
     protected void goToNext() {
         String txt = editText1.getText().toString() + " " + editText2.getText().toString();
-        Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
-        intent.putExtra(KEY_TXT, txt);
+        Intent intent = new Intent(Lab1FirstActivity.this, Lab1SecondActivity.class);
+        intent.putExtra(Constants.KEY_TXT_1, txt);
         startActivity(intent);
     }
 }

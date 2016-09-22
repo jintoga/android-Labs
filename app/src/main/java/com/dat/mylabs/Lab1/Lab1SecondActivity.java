@@ -5,9 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import com.dat.mylabs.Constants;
 import com.dat.mylabs.R;
 
-public class SecondActivity extends AppCompatActivity {
+public class Lab1SecondActivity extends AppCompatActivity {
     @Bind(R.id.result)
     protected TextView result;
 
@@ -16,7 +17,7 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         ButterKnife.bind(this);
-        String txt = getIntent().getStringExtra(FirstActivity.KEY_TXT);
+        String txt = getIntent().getStringExtra(Constants.KEY_TXT_1);
         result.setText(txt);
     }
 }

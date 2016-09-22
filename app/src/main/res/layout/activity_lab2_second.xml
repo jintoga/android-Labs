@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Lab1.Lab1FirstActivity">
+    tools:context="com.dat.mylabs.Lab2.Lab2SecondActivity">
 
     <EditText
         android:id="@+id/editText1"
@@ -23,9 +23,9 @@
         android:hint="Enter something" />
 
     <Button
-        android:id="@+id/next"
+        android:id="@+id/finish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Next" />
+        android:text="Finish" />
 </LinearLayout>

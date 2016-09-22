@@ -10,7 +10,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import com.dat.mylabs.Lab1.FirstActivity;
+import com.dat.mylabs.Lab1.Lab1FirstActivity;
+import com.dat.mylabs.Lab2.Lab2FirstActivity;
 
 public class MainActivity extends AppCompatActivity
     implements NavigationView.OnNavigationItemSelectedListener {
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity
         ActionBarDrawerToggle toggle =
             new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open,
                 R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
+        drawer.setDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
     }
@@ -53,7 +54,10 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.lab1) {
-            FirstActivity.startActivity(this);
+            Lab1FirstActivity.startActivity(this);
+        }
+        if (id == R.id.lab2) {
+            Lab2FirstActivity.startActivity(this);
         }
 
         drawer.closeDrawer(GravityCompat.START);
