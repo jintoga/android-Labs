@@ -12,6 +12,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import com.dat.mylabs.Lab1.Lab1FirstActivity;
 import com.dat.mylabs.Lab2.Lab2FirstActivity;
+import com.dat.mylabs.Lab3.Lab3FirstActivity;
 
 public class MainActivity extends AppCompatActivity
     implements NavigationView.OnNavigationItemSelectedListener {
@@ -58,6 +59,9 @@ public class MainActivity extends AppCompatActivity
         }
         if (id == R.id.lab2) {
             Lab2FirstActivity.startActivity(this);
+        }
+        if (id == R.id.lab3) {
+            Lab3FirstActivity.startActivity(this);
         }
 
         drawer.closeDrawer(GravityCompat.START);
