@@ -31,13 +31,13 @@
         <service
             android:name=".Lab3.MyIntentService"
             android:exported="false" />
-
-        <activity android:name=".Lab3.Lab3SecondActivity" />
-
         <service
             android:name=".Lab3.MyNotStickyService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
+
+        <activity android:name=".Lab3.Lab3SecondActivity" />
+
     </application>
 
 </manifest>

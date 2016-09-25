@@ -24,7 +24,7 @@ public class MyService extends Service {
                         synchronized (this) {
                             try {
                                 wait(futureTime - System.currentTimeMillis());
-                                Log.d("TAG", "STICKY SERVICE doing something every 1s");
+                                Log.i("TAG", "STICKY SERVICE doing something every 1s");
                             } catch (InterruptedException e) {
                                 e.printStackTrace();
                             }
