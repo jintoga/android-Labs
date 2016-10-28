@@ -32,7 +32,7 @@
             android:name=".Lab3.MyIntentService"
             android:exported="false" />
         <service
-            android:name=".Lab3.MyNotStickyService"
+            android:name=".Lab3.MyBoundService"
             android:enabled="true"
             android:exported="true" />
 
